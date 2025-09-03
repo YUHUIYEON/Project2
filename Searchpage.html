@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome - 별아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="master.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="overlay"></div>
+<header id="mainHeader">
+    <div class="mainHeader-wrap">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="image/logo.png" alt="관악구통합도서관 로고">
+                <span class="hiding">관악구통합도서관</span>
+            </a>       
+        </h1>    
+        <nav id="mainNav">
+            <ul>
+                <li><a href="Searchpage.html">도서검색</a></li>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">추천도서</a></li>
+                <li><a href="#">신규도서</a></li>
+                <li><a href="#">새로운소식</a></li>
+                <li><a href="#">문화소식</a></li>
+            </ul>
+        </nav>
+        <div class="util-area">
+            <a href="mypage.html" class="mypage-btn btn-group" >
+                <img src="image/person.png" alt="내정보 바로가기">
+                <span>내정보</span>
+            </a>
+            <button type="button" class="menu-toggle btn-group">
+                <img src="image/menu-burger.png" class="burger-icon" alt="전체메뉴 바로가기">
+                <img src="image/close.png" class="close-icon">
+            </button>
+        </div>
+        <nav id="allMenu_box" class="hidden">
+            <ul class="allMenu-list">
+                <li>
+                    <a href="#">도서관</a>
+                    <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>                    
+                </li>
+                <li>
+                    <a href="#">도서검색</a>
+                    <span><i class="fa-regular fa-star" style="color: #ccc;"></i></span>
+                </li>
+                <li>
+                    <a href="#">베스트</a>
+                    <span><i class="fa-regular fa-star" style="color: #ccc;"></i></span>
+                </li>
+                <li>
+                    <a href="#">추천도서</a>
+                    <span><i class="fa-regular fa-star" style="color: #ccc;"></i></span>
+                </li>
+                <li>
+                    <a href="#">신규도서</a>
+                    <span><i class="fa-regular fa-star" style="color: #ccc;"></i></span>
+                </li>
+                <li>
+                    <a href="#">새로운소식</a>
+                    <span><i class="fa-regular fa-star" style="color: #ccc;"></i></span>
+                </li>
+                <li>
+                    <a href="#">문화소식</a>
+                    <span><i class="fa-regular fa-star" style="color: #ccc;"></i></span>
+                </li>
+                <li>
+                    <a href="#">프로필</a>
+                    <span><i class="fa-regular fa-star" style="color: #ccc;"></i></span>
+                </li>    
+            </ul>
+            <div class="favorite-box">
+                <p class="title">즐겨찾기</p>
+                <div class="favorite-item">
+                    <span class="items">추천도서</span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                </div>
+            </div>
+        </nav>
+    </div> 
+</header>
+<section class="Searchpage">
+    <div class="search-filters">
+        <p>검색 조건</p>
+        <div class="btn-group">
+        <button class="active">전체</button>
+        <button>저자</button>
+        <button>출판사</button>
+        <button>키워드</button>
+        </div>
+    </div>
+    <div class="sort-filters">
+        <p>정렬 기준</p>
+        <div class="btn-group">
+        <button class="active">전체</button>
+        <button>저자</button>
+        <button>최신순</button>
+        </div>
+    </div>
+    <section id="search" class="search-bar">
+        <form method="get" class="search-form">
+            <label for="search" class="hiding">검색</label>
+            <input type="search" placeholder="원하는 검색어를 입력하세요." id="search">
+            <button class="btn-group search-btn">
+                <img src="image/search.png" alt="검색">
+            </button>
+        </form>
+    </section>
+    <div class="tab-menu">
+        <button class="active">전체</button>
+        <button>예약가능</button>
+        <button>예약불가</button>
+    </div>
+    <div class="book-card">
+        <img src="image/best6.jpg" alt="책 이미지">
+        <div class="book-info">
+            <strong>첫 여름, 완주</strong>
+            <p>- 저자 : 김금희<br>
+                - 출판사 : 무제(MUZE)<br>
+                - 출판연도 : 2025-05-08<br>
+                - ISBN : 9788901101569</p>
+        </div>
+        <div class="book-meta">
+            <div class="meta-text">
+                <p>대출 : 5/5</p>
+                <p>예약 : 4/5</p>
+            </div>
+            <button class="reserve-btn">예약</button>
+        </div>
+    </div>
+</section>
+<footer id="mainFooter">
+    <div class="footer-wrap">
+        <div class="footer-top">
+            <ul class="footer-links">
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">사이트이용약관</a></li>
+                <li><a href="#">영상정보처리기기운영방침</a></li>
+                <li><a href="#">찾아오시는 길</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-info">
+                <p>서울특별시 관악구 신림로3길 35</p>
+                <span>COPYRIGHT 2025 (C) GWANAK CULTURE FOUNDATION. ALL RIGHTS RESERVED.</span>
+            </div>
+            <div class="footer-logo">
+                <img src="image/logo2.png" alt="관악문화재단 로고">
+            </div>        
+        </div>
+    </div>
+    <div class="footer-mobile">
+        <ul>
+            <li class="footer-tab active" data-page="home">
+                <a href="#">
+                    <img src="image/footerIcon-home-white.png" alt="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="footer-tab" data-page="search">
+                <a href="#">
+                    <img src="image/footerIcon-search-gray.png" alt="Search">
+                    <span>Search</span>
+                </a>
+            </li>
+            <li class="footer-tab" data-page="history">
+                <a href="#">
+                    <img src="image/footerIcon-history-gray.png" alt="History">
+                    <span>History</span>
+                </a>
+            </li>
+            <li class="footer-tab" data-page="profile">
+                <a href="mypage.html">
+                    <img src="image/footerIcon-profile-gray.png" alt="Profile">
+                    <span>Profile</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<script src="script.js"></script>     
+</body>
+</html>

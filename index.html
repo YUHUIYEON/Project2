@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관악구통합도서관</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome - 별아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- slick css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="master.css">
+</head>
+<body>
+<div class="overlay"></div>
+<header id="mainHeader">
+    <div class="mainHeader-wrap">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="image/logo.png" alt="관악구통합도서관 로고">
+                <span class="hiding">관악구통합도서관</span>
+            </a>       
+        </h1>    
+        <nav id="mainNav">
+            <ul>
+                <li><a href="Searchpage.html">도서검색</a></li>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">추천도서</a></li>
+                <li><a href="#">신규도서</a></li>
+                <li><a href="#">새로운소식</a></li>
+                <li><a href="#">문화소식</a></li>
+            </ul>
+        </nav>
+        <div class="util-area">
+            <a href="mypage.html" class="mypage-btn btn-group" >
+                <img src="image/person.png" alt="내정보 바로가기">
+                <span>내정보</span>
+            </a>
+            <button type="button" class="menu-toggle btn-group">
+                <img src="image/menu-burger.png" class="burger-icon" alt="전체메뉴 바로가기">
+                <img src="image/close.png" class="close-icon">
+            </button>
+        </div>
+        <nav id="allMenu_box" class="hidden">
+            <ul class="allMenu-list">
+                <li>
+                    <a href="#">도서관</a>
+                    <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>                    
+                </li>
+                <li>
+                    <a href="#">도서검색</a>
+                    <span><i class="fa-regular fa-star" style="color: #ccc;"></i></span>
+                </li>
+                <li>
+                    <a href="#">베스트</a>
+                    <span><i class="fa-regular fa-star" style="color: #ccc;"></i></span>
+                </li>
+                <li>
+                    <a href="#">추천도서</a>
+                    <span><i class="fa-regular fa-star" style="color: #ccc;"></i></span>
+                </li>
+                <li>
+                    <a href="#">신규도서</a>
+                    <span><i class="fa-regular fa-star" style="color: #ccc;"></i></span>
+                </li>
+                <li>
+                    <a href="#">새로운소식</a>
+                    <span><i class="fa-regular fa-star" style="color: #ccc;"></i></span>
+                </li>
+                <li>
+                    <a href="#">문화소식</a>
+                    <span><i class="fa-regular fa-star" style="color: #ccc;"></i></span>
+                </li>
+                <li>
+                    <a href="#">프로필</a>
+                    <span><i class="fa-regular fa-star" style="color: #ccc;"></i></span>
+                </li>    
+            </ul>
+            <div class="favorite-box">
+                <p class="title">즐겨찾기</p>
+                <div class="favorite-item">
+                    <span class="items">추천도서</span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                </div>
+            </div>
+        </nav>
+    </div> 
+</header>
+<section id="main-banner">
+    <div class="banner-slider">
+        <div class="slide slide1">
+            <div class="slide-text">
+                <p class="slide-tag">베스트</p>
+                <h2 class="slide-title">가치 있는 책, <br>같이 읽는 책</h2>
+                <p class="slide-desc">프리미어 셀러 『첫 여름, 완주』</p>
+            </div>
+            <div class="slide-media">
+                <img src="image/banner-book1.jpg" alt="첫 여름, 완주 책표지">
+            </div>
+        </div>
+        <div class="slide slide2">
+            <div class="slide-text">
+                <p class="slide-tag">베스트</p>
+                <h2 class="slide-title">히가시노 게이고 신작 </h2>
+                <p class="slide-desc">40주년 기념 대작 『가공범』</p>
+            </div>
+            <div class="slide-media">
+                <img src="image/banner-book2.jpg" alt="첫 여름, 완주 책표지">
+            </div>
+        </div>
+        <div class="slide slide3">
+            <div class="slide-text">
+                <p class="slide-tag">발견의 기쁨</p>
+                <h2 class="slide-title">핏줄을 떠돌다 만나는 <br>소설의 심장</h2>
+                <p class="slide-desc">강화길 신작 장편소설 『치유의 빛』</p>
+            </div>
+            <div class="slide-media">
+                <img src="image/banner-book3.jpg" alt="첫 여름, 완주 책표지">
+            </div>
+        </div>
+    </div>
+</section>  
+<div id="contents">    
+    <section id="search" class="search-bar">
+        <form method="get" class="search-form">
+            <label for="search" class="hiding">검색</label>
+            <input type="search" placeholder="원하는 검색어를 입력하세요." id="search">
+            <button class="btn-group search-btn">
+                <img src="image/search.png" alt="검색">
+            </button>
+        </form>
+    </section>
+    <section id="services" class="service-icons"> 
+        <ul class="icon-group">
+            <li>
+                <a href="#"><div class="icon icon1"></div>도서관</a>
+            </li>
+            <li>
+                <a href="#"><div class="icon icon2"></div>베스트</a>
+            </li>
+            <li>
+                <a href="#"><div class="icon icon3"></div>추천도서</a>
+            </li>
+            <li>
+                <a href="#"><div class="icon icon4"></div>신규도서</a>
+            </li>
+            <li>
+                <a href="#"><div class="icon icon5"></div>문화소식</a>
+            </li>
+        </ul>
+    </section>
+    <section id="bestsellers">
+        <h2>베스트</h2>
+        <ul class="best-slider">
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/best1.jpg" alt="가공범" class="bookimg">
+                        <figcaption>가공범</figcaption>
+                    </figure>  
+                </a>              
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/best2.jpg" alt="혼모노" class="bookimg">
+                        <figcaption>혼모노</figcaption>
+                    </figure>  
+                </a>              
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/best3.jpg" alt="안녕이라 그랬어" class="bookimg">
+                        <figcaption>안녕이라 그랬어</figcaption>
+                    </figure> 
+                </a>               
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/best4.jpg" alt="우리의 낙원에서 만나자" class="bookimg">
+                        <figcaption>우리의 낙원에서 만나자</figcaption>
+                    </figure>
+                </a>                
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/best5.jpg" alt="모순" class="bookimg">
+                        <figcaption>모순</figcaption>
+                    </figure>
+                </a>                
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/best6.jpg" alt="첫 여름, 완주" class="bookimg">
+                        <figcaption>첫 여름, 완주</figcaption>
+                    </figure>
+                </a>                
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/best7.jpg" alt="궤도" class="bookimg">
+                        <figcaption>궤도</figcaption>
+                    </figure>
+                </a>                
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/best8.jpg" alt="료의 생각 없는 생각" class="bookimg">
+                        <figcaption>료의 생각 없는 생각</figcaption>
+                    </figure> 
+                </a>               
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/best9.jpg" alt="경험의 멸종" class="bookimg">
+                        <figcaption>경험의 멸종</figcaption>
+                    </figure>
+                </a>                
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/best10.jpg" alt="백야의 미술관" class="bookimg">
+                        <figcaption>백야의 미술관</figcaption>
+                    </figure> 
+                </a>               
+            </li>
+        </ul>
+    </section>
+    <section id="recent-books">
+        <h2>추천도서</h2>
+        <div class="recent-books-list">            
+            <article>
+                <div class="book-img">
+                    <img src="image/recentbook1.png" alt="행동은 불안을 이긴다">
+                </div>
+                <div class="recent-books-text">
+                    <P class="recent-title">"일단 뛰어내려라.<br> 날개는 그 뒤에 만드는 것이다."</P>
+                    <p class="desc">아마존 인지뇌과학, 심리학</p>
+                </div>
+            </article>
+            <article class="recent-books-hiding">
+                <div class="book-img">
+                    <img src="image/recentbook2.png" alt="누구도 대신 살아 주지 않는다">
+                </div>
+                <div class="recent-books-text">
+                    <P class="recent-title">작은 실천조차 막막한 당신에게 건네는 가장 현실적인 조언</P>
+                    <p class="desc">브라이언 트레이시 신작</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="new-books">
+        <h2>신규도서</h2>
+        <ul class="new-slider">
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/new1.jpg" alt="초역 명상록" class="bookimg">
+                        <figcaption>초역 명상록</figcaption>
+                    </figure>  
+                </a>              
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/new2.jpg" alt="끝까지 해내는 뇌" class="bookimg">
+                        <figcaption>끝까지 해내는 뇌</figcaption>
+                    </figure>  
+                </a>              
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/new3.jpg" alt="과학의 최전선" class="bookimg">
+                        <figcaption>과학의 최전선</figcaption>
+                    </figure> 
+                </a>               
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/new4.jpg" alt="언어로 지구 정복" class="bookimg">
+                        <figcaption>언어로 지구 정복</figcaption>
+                    </figure>
+                </a>         
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/new5.jpg" alt="아웃사이더" class="bookimg">
+                        <figcaption>아웃사이더</figcaption>
+                    </figure>
+                </a>                
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/new6.jpg" alt="조종당하는 인간" class="bookimg">
+                        <figcaption>조종당하는 인간</figcaption>
+                    </figure>
+                </a>                
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/new7.jpg" alt="서양미술사" class="bookimg">
+                        <figcaption>서양미술사</figcaption>
+                    </figure>
+                </a>                
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/new8.jpg" alt="슬로 조깅 혁명" class="bookimg">
+                        <figcaption>슬로 조깅 혁명</figcaption>
+                    </figure> 
+                </a>               
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/new9.jpg" alt="경험의 멸종너에게 들려주는 꿋꿋한 말" class="bookimg">
+                        <figcaption>너에게 들려주는 꿋꿋한 말</figcaption>
+                    </figure>
+                </a>                
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="image/new10.jpg" alt="설명의 기술" class="bookimg">
+                        <figcaption>설명의 기술</figcaption>
+                    </figure> 
+                </a>               
+            </li>
+        </ul>
+    </section>
+    <section id="updates">        
+        <h2>새로운 소식</h2> 
+        <div class="updates-wrap">     
+            <article class="updates-group">
+                <a href="#">
+                    <header> 
+                        <h3>대관</h3>
+                        <img src="image/angle-small-right.png">
+                    </header>
+                    <div class="updates-item">
+                        <h4 class="ellipsis">2025년 생활문화센터 대관 공고문</h4>
+                        <span>2025-07-27</span>
+                        <p class="line-clamp">
+                            2025년도 생활문화센터 대관 공고 대전시립미술관은 지역의 비영리 동아리 단체의 문화예술 활동을 지원하고자 생활문화센터 동아리실을 아래와 같이 대관하오니 관심 있는 분들의 많은 신청바랍니다.
+                        </p>
+                    </div>
+                </a>
+            </article>
+            <article class="updates-group">
+                <a href="#">
+                    <header> 
+                        <h3>채용</h3>
+                        <img src="image/angle-small-right.png">
+                    </header>
+                    <div class="updates-item">
+                        <h4 class="ellipsis">기간제근로자(기록물관리자) 채용공고</h4>
+                        <span>2025-07-27</span>
+                        <p class="line-clamp">
+                            기간제 근로자(학예보조/기록물관리원) 채용을 다음과 같이 공고하오니 많은 지원 바랍니다. 채용개요 채용직급 : 기간제 근로자(학예보조/기록물관리원)
+                        </p>
+                    </div>
+                </a>
+            </article>
+            <article class="updates-group">
+                <a href="#">
+                    <header> 
+                        <h3>공지</h3>
+                        <img src="image/angle-small-right.png">
+                    </header>
+                    <div class="updates-item">
+                        <h4 class="ellipsis">기획자 공모 《DMA 캠프 2025》 공고</h4>
+                        <span>2025-07-27</span>
+                        <p class="line-clamp">
+                            기획자 공모 프로그램 《DMA 캠프 2025》를 다음과 같이 공고합니다. DMA 캠프 2025》를 진행합니다. DMA 캠프 2025》를 진행합니다.
+                        </p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+    <section id="culture">
+        <h2>문화소식</h2>
+        <ul class="culture-list culture-slider">
+            <li>
+                <article>
+                    <a href="#">
+                        <img src="image/culture1.png" alt="뮤지컬 커튼업">
+                        <div>
+                            <h3>예술캠프 &lt;뮤지컬 커튼업&gt;</h3>
+                            <span>2025-07-29~2025-08-09</span>
+                        </div>                        
+                    </a>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <a href="#">
+                        <img src="image/culture2.png" alt="편지를 쓰는 마음">
+                        <div>
+                            <h3>북큐레이션 &lt;편지를 쓰는 마음&gt;</h3>
+                            <span>2025-07-01~2025-07-31</span>
+                        </div>                        
+                    </a>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <a href="#">
+                        <img src="image/culture3.png" alt="고선경 시인과 10문 10답">
+                        <div>
+                            <h3>궁금해! 고선경 시인과 10문 10답</h3>
+                            <span>2025-07-25</span>
+                        </div>                        
+                    </a>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <a href="#">
+                        <img src="image/culture4.png" alt="뮤지컬 커튼업">
+                        <div>
+                            <h3>&lt;어떤 예술은 사라지지 않는다&gt; 북토크</h3>
+                            <span>2025-07-24</span>
+                        </div>                        
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </section>
+</div>
+<footer id="mainFooter">
+    <div class="footer-wrap">
+        <div class="footer-top">
+            <ul class="footer-links">
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">사이트이용약관</a></li>
+                <li><a href="#">영상정보처리기기운영방침</a></li>
+                <li><a href="#">찾아오시는 길</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-info">
+                <p>서울특별시 관악구 신림로3길 35</p>
+                <span>COPYRIGHT 2025 (C) GWANAK CULTURE FOUNDATION. ALL RIGHTS RESERVED.</span>
+            </div>
+            <div class="footer-logo">
+                <img src="image/logo2.png" alt="관악문화재단 로고">
+            </div>        
+        </div>
+    </div>
+    <div class="footer-mobile">
+        <ul>
+            <li class="footer-tab active" data-page="home">
+                <a href="#">
+                    <img src="image/footerIcon-home-white.png" alt="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="footer-tab" data-page="search">
+                <a href="#">
+                    <img src="image/footerIcon-search-gray.png" alt="Search">
+                    <span>Search</span>
+                </a>
+            </li>
+            <li class="footer-tab" data-page="history">
+                <a href="#">
+                    <img src="image/footerIcon-history-gray.png" alt="History">
+                    <span>History</span>
+                </a>
+            </li>
+            <li class="footer-tab" data-page="profile">
+                <a href="#">
+                    <img src="image/footerIcon-profile-gray.png" alt="Profile">
+                    <span>Profile</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<!-- jQuery + slick js -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
